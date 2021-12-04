@@ -16,7 +16,7 @@ namespace Tic_Tac_Toe
         }
         public void PlayerInput()
         {
-            Console.WriteLine("Enter Your Input to Play the Game");
+            Console.WriteLine("Enter Your Input to Play the Game Between X/Y");
             char playerInput = Convert.ToChar(Console.ReadLine());
             char input = char.ToUpper(playerInput);
             if (input == 'X')
