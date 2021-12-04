@@ -14,23 +14,20 @@ namespace Tic_Tac_Toe
                 gameBoard[i] = ' ';
             }   
         }
-        public void PlayerInput()
+        public Char PlayerInput()
         {
             Console.WriteLine("Enter Your Input to Play the Game Between X/Y");
             char playerInput = Convert.ToChar(Console.ReadLine());
             char input = char.ToUpper(playerInput);
             if (input == 'X')
             {
-                Console.WriteLine("Player Choose :" + playerInput);
-                Console.WriteLine("System Choose :" +'O');
+                return playerInput;
             }
             if (input == 'O')
             {
-                Console.WriteLine("Player Choose :" + playerInput);
-                Console.WriteLine("System Choose :" + 'X');
+                return playerInput;
             }
-            else
-                Console.WriteLine("Plese Provide Correct Input to Pla Game");
+            return 'W'; 
         }
     }
 }
