@@ -4,15 +4,15 @@ using System.Text;
 
 namespace Tic_Tac_Toe
 {
-   public class TicTacToeGame
+    public class TicTacToeGame
     {
         public char[] gameBoard = new char[10];
-        public void CreateGameBoard() 
+        public void CreateGameBoard()
         {
             for (int i = 1; i < gameBoard.Length; i++)
             {
                 gameBoard[i] = ' ';
-            }   
+            }
         }
         public Char PlayerInput()
         {
@@ -27,16 +27,19 @@ namespace Tic_Tac_Toe
             {
                 return playerInput;
             }
-            return 'W'; 
+            return 'W';
         }
-        public void Display() 
+        public void Display()
         {
+            Console.WriteLine("   |     |       |");
+            Console.WriteLine("  {0}    |  {1}  |  {2}", gameBoard[1], gameBoard[2], gameBoard[3]);
+            Console.WriteLine("   |     |    ");
+            Console.WriteLine("___|_____|________");
+            Console.WriteLine("  {0}    |  {1}  |  {2}", gameBoard[4], gameBoard[5], gameBoard[6]);
             Console.WriteLine("   |     |    ");
             Console.WriteLine("   |     |    ");
-            Console.WriteLine("___|_____|____");
-            Console.WriteLine("   |     |    ");
-            Console.WriteLine("   |     |    ");
-            Console.WriteLine("___|_____|____");
+            Console.WriteLine("___|_____|____________");
+            Console.WriteLine("  {0}    |  {1}  |  {2}", gameBoard[7], gameBoard[8], gameBoard[9]);
             Console.WriteLine("   |     |    ");
             Console.WriteLine("   |     |    ");
         }
