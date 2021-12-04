@@ -9,7 +9,7 @@ namespace Tic_Tac_Toe
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter your Choice Number to Execute the Program Press- 1-Create Game Board, 2-Player Input, 3-Exit");
+                Console.WriteLine("Enter your Choice Number to Execute the Program Press- 1-Create Game Board, 2-Player Input, 3-Display ,4-Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 TicTacToeGame game = new TicTacToeGame();
                 switch (choice)
@@ -20,6 +20,9 @@ namespace Tic_Tac_Toe
                     case 2:
                         game.PlayerInput();
                         Console.WriteLine("Player Position is:" + game.PlayerInput());
+                        break;
+                    case 3:
+                        game.Display();
                         break;
                     default:
                          flag = false;

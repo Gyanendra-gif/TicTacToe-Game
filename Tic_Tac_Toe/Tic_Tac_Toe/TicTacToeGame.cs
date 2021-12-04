@@ -29,5 +29,16 @@ namespace Tic_Tac_Toe
             }
             return 'W'; 
         }
+        public void Display() 
+        {
+            Console.WriteLine("   |     |    ");
+            Console.WriteLine("   |     |    ");
+            Console.WriteLine("___|_____|____");
+            Console.WriteLine("   |     |    ");
+            Console.WriteLine("   |     |    ");
+            Console.WriteLine("___|_____|____");
+            Console.WriteLine("   |     |    ");
+            Console.WriteLine("   |     |    ");
+        }
     }
 }
