@@ -10,6 +10,7 @@ namespace Tic_Tac_Toe
             TicTacToeGame game = new TicTacToeGame();
             game.CreateGameBoard();
             game.PlayerInput();
+            Console.WriteLine("Player Position is:" +game.PlayerInput());
         }
     }
 }
